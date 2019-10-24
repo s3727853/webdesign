@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="198.9707mm"
+   height="111.42176mm"
+   viewBox="0 0 198.9707 111.42176"
+   version="1.1"
+   id="svg8"
+   sodipodi:docname="Lamp.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
+  <defs
+     id="defs2">
+    <linearGradient
+       id="linearGradient6097"
+       osb:paint="solid">
+      <stop
+         style="stop-color:#babdde;stop-opacity:1;"
+         offset="0"
+         id="stop6095" />
+    </linearGradient>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="391.43525"
+     inkscape:cy="141.68061"
+     inkscape:document-units="mm"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:object-paths="true"
+     inkscape:snap-smooth-nodes="false"
+     inkscape:snap-nodes="false"
+     inkscape:window-width="2560"
+     inkscape:window-height="1377"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3713"
+       originx="-7.0021076"
+       originy="-113.60565" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-7.0021077,-71.972586)">
+    <path
+       style="fill:#ffffff;stroke:#1a1a1a;stroke-width:1.05889511;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
+       d="m 7.5462141,139.69916 v 34.90124 c 0,4.57849 3.8773669,8.2645 8.6941979,8.2645 H 196.74917 c 4.81683,0 8.69536,-3.68601 8.6942,-8.2645 l -0.009,-34.88208 c -0.29469,-0.18785 0.003,0.0275 0.003,0.0275 L 101.16152,72.502022 7.5315193,139.71241 l 0.048103,0.0368 z"
+       id="path4645"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="csssscccccc" />
+    <path
+       style="fill:#ffffff;stroke:#babdde;stroke-width:2.02030516;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0.39215686"
+       d="M 53.681079,687.97336 C 43.386331,685.47891 35.27606,677.91653 31.778185,667.55013 c -0.891673,-2.64259 -0.944227,-6.0772 -1.078783,-70.50199 L 30.557956,529.32407 206.41752,403.09885 c 96.72275,-69.42387 176.00604,-126.18323 176.18506,-126.13191 0.17902,0.0513 86.56757,55.7143 191.97455,123.69551 105.40695,67.9812 193.41048,124.72622 195.56336,126.10003 l 3.91434,2.49785 v 67.66688 67.66689 l -1.26759,3.77612 c -3.31537,9.87628 -11.04733,16.86787 -21.69322,19.61602 -2.69585,0.69591 -39.12756,0.77269 -348.75517,0.73501 -294.21929,-0.0358 -346.178966,-0.14726 -348.657771,-0.74789 z"
+       id="path4647"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <path
+       style="opacity:1;fill:#babdde;fill-opacity:0.85882353;stroke:#babdde;stroke-width:3.02362204;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 83.615569,687.27131 c -27.727092,-0.25102 -30.766079,-0.35997 -32.813408,-1.17638 -7.743266,-3.08779 -13.38822,-8.4921 -17.061476,-16.33414 l -1.390358,-2.96828 -0.278623,-15.65736 C 31.918462,642.5236 31.745979,611.72008 31.688409,582.68288 L 31.583737,529.88797 107.21371,475.60671 C 236.16684,383.05427 312.28219,328.47148 348.15948,302.82298 l 34.48168,-24.65078 4.15666,2.67745 c 31.67973,20.40603 123.19316,79.39673 206.94478,133.39918 57.64183,37.16705 121.56555,78.38139 142.05271,91.58744 l 37.24937,24.01099 v 67.25714 c 0,65.42384 -0.0268,67.33535 -0.98732,70.1269 -3.23153,9.39251 -9.26345,15.41907 -19.20437,19.18728 l -2.78928,1.0573 -317.94551,0.0361 c -174.87004,0.0199 -331.69622,-0.0884 -348.502631,-0.2406 z"
+       id="path4651"
+       inkscape:connector-curvature="0"
+       transform="scale(0.26458333)" />
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot826"
+       style="font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
+       transform="scale(0.26458333)"><flowRegion
+         id="flowRegion828"><rect
+           id="rect830"
+           width="553.57141"
+           height="179.28572"
+           x="139.28572"
+           y="491.09113" /></flowRegion><flowPara
+         id="flowPara832"></flowPara></flowRoot>    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:71.13833618px;line-height:1.25;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.1115365"
+       x="47.348595"
+       y="179.0359"
+       id="text840"
+       transform="scale(1.0405164,0.96106126)"><tspan
+         sodipodi:role="line"
+         id="tspan838"
+         x="47.348595"
+         y="179.0359"
+         style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:71.13833618px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.1115365">Music</tspan></text>
+  </g>
+</svg>
