@@ -11,22 +11,21 @@
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    width="198.9707mm"
-   height="111.42176mm"
-   viewBox="0 0 198.9707 111.42176"
+   height="272.25424mm"
+   viewBox="0 0 198.9707 272.25423"
    version="1.1"
    id="svg8"
-   sodipodi:docname="Lamp.svg"
-   inkscape:version="0.92.4 (5da689c313, 2019-01-14)">
-    
-    
-<style>/* <![CDATA[ */
+   sodipodi:docname="Lamp2-longer.svg"
+   inkscape:version="0.92.4 (5da689c313, 2019-01-14)"
+   style="enable-background:new">
+  <style
+     id="style815">/* <![CDATA[ */
     
     svg:hover{
          fill: red;
          }
     
     /* ]]> */</style>
-    
   <defs
      id="defs2">
     <linearGradient
@@ -37,6 +36,59 @@
          offset="0"
          id="stop6095" />
     </linearGradient>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:label="Cross Blur"
+       id="filter1001">
+      <feColorMatrix
+         in="SourceGraphic"
+         values="1 0 0 0 0 0 1 0 0 0 0 0 1 0 0 -0.2125 -0.7154 -0.0721 1 0 "
+         result="colormatrix"
+         id="feColorMatrix991" />
+      <feComposite
+         in="SourceGraphic"
+         in2="colormatrix"
+         operator="arithmetic"
+         k2="1"
+         k3="2.32"
+         k4="0.23"
+         result="composite"
+         id="feComposite993"
+         k1="0" />
+      <feGaussianBlur
+         stdDeviation="6.93 0.01"
+         result="blur1"
+         id="feGaussianBlur995" />
+      <feGaussianBlur
+         in="composite"
+         stdDeviation="0.01 6.97"
+         result="blur2"
+         id="feGaussianBlur997" />
+      <feBlend
+         in="blur2"
+         in2="blur1"
+         mode="darken"
+         result="blend"
+         id="feBlend999" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter1188"
+       x="-0.058134515"
+       width="1.116269"
+       y="-0.44990709"
+       height="1.8998142">
+      <feGaussianBlur
+         inkscape:collect="always"
+         stdDeviation="4.4615017"
+         id="feGaussianBlur1190" />
+      <feBlend
+         inkscape:collect="always"
+         mode="overlay"
+         in2="BackgroundImage"
+         id="feBlend1192" />
+    </filter>
   </defs>
   <sodipodi:namedview
      id="base"
@@ -46,8 +98,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="391.43525"
-     inkscape:cy="141.68061"
+     inkscape:cx="284.28899"
+     inkscape:cy="556.46793"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="true"
@@ -62,8 +114,8 @@
     <inkscape:grid
        type="xygrid"
        id="grid3713"
-       originx="-7.0021076"
-       originy="-113.60565" />
+       originx="-7.0021072"
+       originy="-74.312828" />
   </sodipodi:namedview>
   <metadata
      id="metadata5">
@@ -81,7 +133,7 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-7.0021077,-71.972586)">
+     transform="translate(-7.0021077,49.567114)">
     <path
        style="fill:#ffffff;stroke:#1a1a1a;stroke-width:1.05889511;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none"
        d="m 7.5462141,139.69916 v 34.90124 c 0,4.57849 3.8773669,8.2645 8.6941979,8.2645 H 196.74917 c 4.81683,0 8.69536,-3.68601 8.6942,-8.2645 l -0.009,-34.88208 c -0.29469,-0.18785 0.003,0.0275 0.003,0.0275 L 101.16152,72.502022 7.5315193,139.71241 l 0.048103,0.0368 z"
@@ -111,7 +163,7 @@
            height="179.28572"
            x="139.28572"
            y="491.09113" /></flowRegion><flowPara
-         id="flowPara832"></flowPara></flowRoot>    <text
+         id="flowPara832" /></flowRoot>    <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:71.13833618px;line-height:1.25;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.1115365"
        x="47.348595"
@@ -123,5 +175,17 @@
          x="47.348595"
          y="179.0359"
          style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:71.13833618px;font-family:'Amatic SC';-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start;stroke-width:1.1115365">Music</tspan></text>
+    <path
+       style="opacity:0.9;fill:#ffff00;fill-opacity:0.71111115;stroke:#ffff00;stroke-width:0.79832941;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter1188)"
+       d="m 12.278321,196.87801 a 94.881514,31.137735 0 0 0 92.101359,23.79958 94.881514,31.137735 0 0 0 92.08533,-23.78769 H 14.985649 c -0.961434,0 -1.8441,-0.006 -2.707328,-0.0119 z"
+       id="path834"
+       inkscape:connector-curvature="0"
+       transform="matrix(0.95514576,0,0,1.083392,6.1934174,-27.99373)" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1.47988594;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 101.28218,72.569596 c -0.11103,-121.85121 -0.16656,-122.008439 -0.16656,-122.008439"
+       id="hanger"
+       inkscape:connector-curvature="0"
+       inkscape:label="hanger" />
   </g>
 </svg>
