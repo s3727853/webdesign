@@ -1,5 +1,168 @@
-nav>img {
-    height: 4em;
-    padding-right: 1em;
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background: linear-gradient(120deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 90%);
+}
+
+.menu:hover path {
     
+fill: yellow;
+transition: fill 0.5s;
+    
+/*    add lose focus transition also....*/
+    
+}
+
+#logo{
+    position: fixed;
+    top: 0;
+    width: 15vw;
+    
+   
+}
+.topnav {
+    
+    display: block;
+    position: fixed;
+    top: 0;
+   
+    margin-left: 20vw;
+
+    
+}
+.menu {
+    width: 6vw;
+/*    height: 100%;*/
+    padding-right: 2vw;
+  
+    
+/*border: 1px solid red;*/
+   
+}
+
+.section {
+    height: 100vh;
+    padding-top: 25vh;
+}
+
+svg {
+    
+    
+/*
+    width: 250px;
+    height: 250px;
+    display: inline;
+    float: right;
+    border: 3px solid red;
+*/
+}
+
+/* ---- Grid Elements for home Home page ----
+*/
+.home-grid {
+    padding-top: 25vh;
+    display: inline-grid;
+    grid-template-columns: repeat(2, 35vw);
+    grid-template-rows: repeat(2, 35vh);
+    
+    
+}
+
+.grid-item {
+    border: 2px solid black;
+    margin: 10px;
+    border-radius: 10px;
+    
+    /*  Parameters for mouseover effects  */
+    transition: .4s ease;
+    
+    /* Background gradient for content tiles */
+    
+    
+    
+    /* background color and shadows */
+    box-shadow: 
+        0px 3px 10px 2px hsla(0, 0%, 0%, 0.1),
+        0px 5px 10px 2px,
+        0px -3px 10px 2px hsla(0, 0%, 0%, 0.1)inset;
+    
+    
+}
+
+
+#music-grid{
+    background-image:url(../images/music.jpeg);
+    background-size: cover;
+}
+
+
+#eating-grid{
+    background-image:url(../images/food.jpeg);
+    background-size: cover;
+}
+
+#events-grid{
+    background-image:url(../images/fireworks.jpeg);
+    background-size: cover;
+}
+
+#shopping-grid{
+    background-image:url(../images/shopping.jpeg);
+    background-size: cover;
+}
+
+/*---- Mouse Over effetcs ----*/
+
+#music-grid:hover{
+    
+    background-image: url(../images/musicpreview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    
+}
+#eating-grid:hover{
+    
+    background-image: url(../images/musicpreview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    
+}
+
+#events-grid:hover{
+    
+    background-image: url(../images/musicpreview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    
+}
+
+#shopping-grid:hover{
+    
+    background-image: url(../images/musicpreview.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: transparent;
+    
+}
+
+
+
+
+
+
+
+.text {
+    
+    text-align: center;
+    margin-top: 300px;
+    width: 60%;
+    word-wrap: break-word;
 }
