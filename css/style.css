@@ -1,168 +1,507 @@
-html {
-    scroll-behavior: smooth;
+/* import fonts */
+
+@font-face {
+    font-family: 'Amatic SC, Bold';
+    src: url("/fonts/Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
-body {
+@font-face {
+    font-family: 'Amatic SC';
+    src: url("/fonts/Amatic_SC/AmaticSC-Bold.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
 
-    margin-left: 10vw;
-    margin-right: 10vw;
+@font-face {
+    font-family: "Lato Regular";
+    font-style: normal;
+    font-weight: bold;
+    src: local('Lato Regular'), url("/fonts/Lato/Lato-Regular.ttf") format("truetype");
+}
+
+/*enable smooth scroll and add padding to push page content towards center of viewport*/
+html {
+    scroll-behavior: smooth;
+    padding-left: 13vw;
+    padding-right: 13vw;
+}
+
+/*Background shading/colour*/
+body {
     background: linear-gradient(120deg, rgba(254,252,234,1) 0%,rgba(241,218,54,1) 90%);
 }
 
+/*Menu mouse over effect*/
 .menu:hover path {
-    
-fill: yellow;
-transition: fill 0.5s;
-    
-/*    add lose focus transition also....*/
-    
+    fill: yellow;
+    transition: fill 0.5s;
 }
 
+/*Logo Image*/
 #logo{
     position: fixed;
     top: 0;
-    width: 15vw;
-    
-   
+    width: 10vw;
 }
+
+/*Top Navbar*/
 .topnav {
-    
     display: block;
     position: fixed;
     top: 0;
-   
-    margin-left: 20vw;
-
-    
+    margin-left: 20vw;  
 }
+
+/*Navbar elements spacing*/
 .menu {
     width: 6vw;
-/*    height: 100%;*/
     padding-right: 2vw;
-  
-    
-/*border: 1px solid red;*/
-   
 }
 
-.section {
-    height: 100vh;
-    padding-top: 25vh;
+/*Remove anchor <a> default underline*/
+.topnav a {
+    text-decoration: none;   
 }
 
-svg {
-    
-    
-/*
-    width: 250px;
-    height: 250px;
-    display: inline;
-    float: right;
-    border: 3px solid red;
-*/
-}
 
-/* ---- Grid Elements for home Home page ----
-*/
+/* ---- Grid Elements for home Home page ----*/
+
 .home-grid {
-    padding-top: 25vh;
+/*    Margin stops menu and content overlapping*/
+    margin-top: 20vh;
+/*    Grid setup*/
     display: inline-grid;
     grid-template-columns: repeat(2, 35vw);
     grid-template-rows: repeat(2, 35vh);
-    
-    
 }
 
 .grid-item {
     border: 2px solid black;
     margin: 10px;
     border-radius: 10px;
-    
     /*  Parameters for mouseover effects  */
     transition: .4s ease;
-    
-    /* Background gradient for content tiles */
-    
-    
-    
     /* background color and shadows */
     box-shadow: 
         0px 3px 10px 2px hsla(0, 0%, 0%, 0.1),
         0px 5px 10px 2px,
-        0px -3px 10px 2px hsla(0, 0%, 0%, 0.1)inset;
-    
-    
+        0px -3px 10px 2px hsla(0, 0%, 0%, 0.1)inset;  
 }
 
 
+/* This section sets the home page content pane images */
+
 #music-grid{
+/*  Adobe Stock, ND. “Music festival background, silhouette of musician artist with acoustic guitar at sunset field. #132616247”. Accessed Oct. 2019
+    https://stock.adobe.com/au/images/music-festival-background-silhouette-of-musician-artist-with-acoustic-guitar-at-sunset-field/132616247 */
     background-image:url(../images/music.jpeg);
     background-size: cover;
 }
 
-
 #eating-grid{
+/*  Adobe Stock, ND. “organic food on street food festival. special food sold on Open kitchen food festival event #275157342”. Accessed Oct. 2019.
+    https://stock.adobe.com/au/images/organic-food-on-street-food-festival-special-food-sold-on-open-kitchen-food-festival-event/275157342 */
     background-image:url(../images/food.jpeg);
     background-size: cover;
 }
 
 #events-grid{
+/*  Adobe Stock, ND. “Fireworks on blue background with stars and space for text #293706949”. Accessed Oct. 2019.
+    https://stock.adobe.com/au/images/fireworks-on-blue-background-with-stars-and-space-for-text/293706949 */
     background-image:url(../images/fireworks.jpeg);
     background-size: cover;
 }
 
 #shopping-grid{
+/*  Adobe Stock, ND. “Wishes written on Tanzaku, small pieces of paper, and hung on a Japanese wishing tree, located in the Little Tokyo section of Los Angeles, California, photographed at an outdoor mall at night.           #292669599”. Accessed Oct. 2019.
+        https://stock.adobe.com/au/images/wishes-written-on-tanzaku-small-pieces-of-paper-and-hung-on-a-japanese-wishing-tree-located-in-the-little-tokyo-section-of-los-angeles-california-photographed-at-an-outdoor-mall-at-night/292669599 */
     background-image:url(../images/shopping.jpeg);
     background-size: cover;
 }
 
-/*---- Mouse Over effetcs ----*/
+/*---- Rollover effects for the home page conent panes----
+
+While this approach works it seems a bit clunky and in future I would
+investigate a cleaner method than using images to display text content
+*/
 
 #music-grid:hover{
-    
-    background-image: url(../images/musicpreview.png);
+/*  Adobe Stock, ND. “Hands holding music instruments #197427561”. Accessed Oct. 2019. 
+	https://stock.adobe.com/au/images/hands-holding-music-instruments/197427561 */
+    background-image: url(../images/music_preview.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: transparent;
-    
+    cursor: pointer;
 }
 #eating-grid:hover{
-    
-    background-image: url(../images/musicpreview.png);
+/*  Adobe Stock, ND. “Making of burgers #108019680”. Accessed Oct. 2019.
+	https://stock.adobe.com/au/images/making-of-burgers/108019680 */
+    background-image: url(../images/food_preview.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    color: transparent;
-    
+    color: transparent;  
+    cursor: pointer;
 }
 
 #events-grid:hover{
-    
-    background-image: url(../images/musicpreview.png);
+/*  Adobe Stock, ND. “Ferris wheel on a cloudy sky background vintage color. #91689832”. Accessed Oct. 2019.
+	https://stock.adobe.com/au/images/ferris-wheel-on-cloudy-sky-background-vintage-color/91689832 */
+    background-image: url(../images/events_preview.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     color: transparent;
-    
+    cursor: pointer;
 }
 
 #shopping-grid:hover{
-    
-    background-image: url(../images/musicpreview.png);
+/*  Adobe Stock, ND. “Blurred photo of food exhibition fair montage with wood table top for background. #134856370”. Accessed Oct. 2019.
+	https://stock.adobe.com/au/images/blurred-photo-of-food-exhibition-fair-montage-with-wood-table-top-for-background/134856370 */
+    background-image: url(../images/shopping_preview.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    color: transparent;
-    
+    color: transparent;   
+    cursor: pointer;
+}
+/*Content Pane Title text*/
+.grid-item h1 {
+    background-color: black;
+    color: #fff; 
+    display: inline;
+    padding: 1px;
+    border-radius: 10px;
+    box-decoration-break: clone;
+    font-family: "Amatic SC, Bold";
+    font-size: 3em;
+    color: white; 
+}
+
+/* Setting margin/padding/height for all sections and setting up grid */
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 2vh;
+    margin-right: 5px;
+    margin-top: 22vh;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 
+        0px 3px 10px 2px hsla(0, 0%, 0%, 0.1),
+        0px 5px 10px 2px,
+        0px -3px 10px 2px hsla(0, 0%, 0%, 0.1)inset;
+    background-color: hsla(46, 100%, 50%, 0.2);
+}
+
+/*Indivual grid elements, padding is added to create a space beetween outer border and text*/
+
+/*Intro*/
+.grid-element1 {
+    padding-left: 5px;
+    grid-column-start: 1;
+    grid-column-end: 5;
+   
+}
+/*Content column 1*/
+.grid-element2 {
+    padding-left: 5px;
+    grid-column-start: 1;
+    grid-column-end: 2;    
+}
+
+/*Content column 2*/
+.grid-element3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 5vw;
+     
+}
+/*The map - Column 3*/
+.grid-element4 {
+    grid-row-start: 2;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
+    padding-left: 10vw;
+   
+}
+/*Contents "footer" image placement area, the image is specified below per section ID*/
+.grid-element5{
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+/*Footer images for content is applied here*/
+
+#music {
+    height: 25vh;
+    background:  url('/images/crowd.jpeg') no-repeat center; 
+    background-size: cover;
+/*  Adobe Stock, ND. “Cheering crowd at a rock concert #96869035”. Accessed Oct. 2019.
+	https://stock.adobe.com/au/images/cheering-crowd-at-a-rock-concert/96869035 */
+}
+
+#food {
+    height: 25vh;
+    background:  url('/images/foodtruck.jpeg') no-repeat center; 
+    background-size: cover;
+/*  Adobe Stock, ND. “Food truck in city festival selective focus #233186197”. Accessed Oct. 2019.
+	https://stock.adobe.com/au/images/food-truck-in-city-festival-selective-focus/233186197 */
+}  
+
+#events {
+    height: 25vh;
+    background:  url('/images/events.jpg') no-repeat center; 
+    background-size: cover;
+/*  Adobe Stock, ND. “Jamaa el Fna market square in Marrakesh's medina with fireworks, Marrakesh, Morocco #224600287”. Accessed Oct. 2019	
+    https://stock.adobe.com/au/images/jamaa-el-fna-market-square-in-marrakesh-s-medina-with-fireworks-marrakesh-morocco/224600287 */
+}
+
+#shopping {
+    height: 25vh;
+    background:  url('/images/markets.jpg') no-repeat center; 
+    background-size: cover;
+/*  Adobe Stock, ND. “Weekend market festival with colorful decoration retro filter effect #230260246”. Accessed Oct. 2019.
+    https://stock.adobe.com/au/images/weekend-market-festival-with-colorful-decoration-retro-filter-effect/230260246 */
+}
+
+/* All images of this class will scale responsivly (Map pictures)*/
+.responsive {
+    width: 40%;
+    height: auto;
+    overflow: hidden;
+    transition: transform .5s ease;
+}
+
+/*Map mouse over effect, image will "zoom" in*/
+.responsive:hover {
+    transform: scale(1.5);
+}
+
+/*Section titles*/
+.grid-container h1 {
+    font-family: "Amatic SC, Bold";
+    font-size: 2.5vw;
+    line-height: 0px;
+}
+
+/*Section subheadings where relevant*/
+h2 {
+    font-family: "Amatic SC, Bold";
+    font-size: 1.8vw; 
+    line-height: 0px;
+}
+
+/*Section text*/
+p {
+    font-family: "Lato Regular", sans-serif;
+    font-size: 1.0vw;
+    line-height: 40px;
+}
+
+/*text spacing for subheading lists or content*/
+.column p {
+    line-height: 5vh;
+}
+
+/*Contact Form formating*/
+.container {
+    max-width: 20vw;
+	width:100%;
+	position:relative;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+#contact textarea {
+	height: 10vh;
+	width: 100%;
+}
+
+#contact textarea, input {
+    background-color: hsla(46, 50%, 50%, 0.1);
+    font-family: "Lato Regular", sans-serif;
+    font-size: 1.8vh;
+}
+#contact button[type="submit"] {
+	cursor:pointer;
+	width:100%;
+	border:none;
+	background: black;
+	color:#FFF;
+	margin:0 0 5px;
+	padding:6px;
+	font-size:1vw;
+}
+
+#contact input{
+    width: 100%;
 }
 
 
+/*Tablet break point*/
 
+/*Where possible in the above desktop layout I have used relative measurments for text size,layout etc so that it can scale with browser window size (No upper limit). 
 
+For smaller displays since we are working within know breakpoints some elements have been overidden with hardcoded pixel values for readability and display purposes.*/
 
-
-
-.text {
+@media only screen and (max-width: 768px) and (max-height: 1024px) {
     
-    text-align: center;
-    margin-top: 300px;
-    width: 60%;
-    word-wrap: break-word;
-}
+    /* Increase Navbar Size*/
+    .menu {
+    width: 10vw;
+    padding-right: 2vw;
+    }
+    
+    /* Increase logo size */
+    #logo{
+    position: fixed;
+    top: 0;
+    width: 20vw;
+    }
+    
+    /*  Increase home content grid size to utilise more of the screen */
+    .home-grid {
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 40vh);
+    }
+    
+    /*  Custom font sizes for better readability*/
+    .grid-element1 h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    /*  Increase map size  */
+    .responsive {
+    width: 90%;
+    }
+    
+    /* Remove padding from page */
+    html {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    }
+    
+    
+/*Mobile break point*/
+
+@media only screen and (max-width: 480px) and (max-height: 640px) {
+
+    /* Increase Navbar Size*/
+    .menu {
+    width: 10vw;
+    padding-right: 2vw;
+
+    }
+    /* Increase logo size */
+    #logo{
+    position: fixed;
+    top: 0;
+    width: 20vw;
+    }
+    
+    /*  Increase home content grid size to utilise more of the screen */
+    .home-grid {
+    grid-template-columns: repeat(2, 50vw);
+    grid-template-rows: repeat(2, 40vh);
+    }
+    
+
+    /*  Custom font sizes for better readability*/
+  
+    .grid-element1 h1 {
+        font-size: 30px;
+    }
+    
+    h2 {
+        font-size: 20px;
+    }
+    
+    p {
+        font-size: 18px;
+    }
+    
+    /*  Increase map size  */
+    .responsive {
+    width: 90%;
+    }
+    
+    .grid-item h1 {
+        font-size: 20px;
+    }
+    
+    /* Remove padding from page */
+    html {
+    padding-left: 0vw;
+    padding-right: 0vw;
+    }
+    
+    /* Changing grid layour, removing the third column and stacking the content*/
+    .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    margin-bottom: 2vh;
+    margin-top: 22vh;
+    }
+
+    .grid-element1 {
+    padding-left: 2px;
+    grid-column-start: 1;
+    grid-column-end: 4;
+   
+    }
+    /*Content column 1*/
+    .grid-element2 {
+    padding-left: 2px;
+    grid-column-start: 1;
+    grid-column-end: 2;    
+    }
+
+    /*Content column 2*/
+    .grid-element3 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    padding-left: 5vw;
+     
+    }
+    /*The map - Column 3*/
+    .grid-element4 {
+    grid-row-start: 3;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding-left: 4vw;
+   
+    }
+    /*Contents "footer" image placement area */
+    .grid-element5 {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    }
+
+    /* Map Image   */
+    .responsive {
+    width: auto;
+    height: 220px;
+    overflow: hidden;
+    transition: transform .5s ease;
+    }
+    
+    /*Map mouse over effect, image will "zoom" in */
+    .responsive:hover {
+    transform: scale(1.5);
+    }

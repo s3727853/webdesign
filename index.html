@@ -1,24 +1,38 @@
 <!doctype html>
 <html lang="en">
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="utf-8">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <meta name="description" content="Assignmnet 1 Web Page">
+        <meta name="description" content="Assignmnet 3 Web Page">
         <title>Southern Coast Festival of Lights</title>
+
+         <!--This @import is just to keep the SVG happy, could not get it to use the font from @font face in CSS style document...         -->
+        <style>
+            @import url('https://fonts.googleapis.com/css?family=Amatic+SC&display=swap');
+        </style>
         
+    </head>  
+    
+    <!--Top navigation bar-->
+    <nav>    
     <a href="#home">  
-        <img id="logo" src="images/festival-of-light-logo.png">
+        <!--    Image property of Curtin University Australia-->
+        <img id="logo" src="images/festival-of-light-logo.png" alt="Website Logo image">
     </a>
 
-    <nav>
-     <div class="topnav" >  
+     <div class="topnav">  
+  
+<!-- SVG Code below for navigation icons    -->
+<!--         While it is messy putting the SVG code directly into the HTML document it was the easiest
+             option for me to have the dynamic content. In future I will try find a cleaner method. -->
+ 
+<!--Home SVG         -->
          
+<!--    SVGs Created with Inkscape     -->
          
-        
-     
-     
 <a href="#home">      
-   <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 30 200 300" >
+   <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 30 200 300">
   <defs>
     <filter id="a" x="-.0581" width="1.1163" y="-.4499" height="1.8998" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="4.4615"/>
@@ -29,16 +43,18 @@
   <path d="M7.201 231.5934c-2.7238-.66-4.8697-2.6609-5.7951-5.4036-.236-.6992-.2499-1.608-.2855-18.6537l-.0374-17.9187 46.5295-33.397c25.5913-18.3684 46.5683-33.386 46.6157-33.3725.0473.0136 22.9043 14.7411 50.7932 32.7278 27.889 17.9867 51.1732 33.0005 51.7428 33.364l1.0357.6609v35.807l-.3354.9991c-.8772 2.6131-2.923 4.463-5.7397 5.1901-.7132.1841-10.3525.2044-92.2748.1945-77.8455-.0095-91.5931-.039-92.249-.1979z" fill="#fff" stroke="#babdde" stroke-width=".534530974" stroke-linejoin="round" stroke-opacity=".3922"/>
   <path d="M15.1212 231.4076c-7.3361-.0664-8.1402-.0952-8.6819-.3112-2.0487-.817-3.5423-2.2469-4.5142-4.3217l-.3679-.7854-.0737-4.1427c-.0405-2.2785-.0862-10.4286-.1014-18.1113l-.0277-13.9687 20.0105-14.3619c34.1188-24.4878 54.2577-38.9295 63.7502-45.7157l9.1233-6.5222 1.0997.7084c8.382 5.3991 32.5949 21.0071 54.7542 35.2952 15.251 9.8338 32.1642 20.7385 37.5848 24.2326l9.8555 6.3529v17.795c0 17.3101-.007 17.8159-.2612 18.5545-.855 2.485-2.451 4.0796-5.0812 5.0766l-.738.2798-84.123.0095c-46.2677.0053-87.7613-.0234-92.208-.0636z" fill="#babdde" fill-opacity=".8588" stroke="#babdde" stroke-width=".799984088" stroke-linejoin="round"/>
   <text style="line-height:1.25;-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start" x="47.3486" y="179.0359" transform="matrix(1.04052 0 0 .96106 -7.0021 49.5671)" font-weight="700" font-size="71.1383" font-family="Amatic SC" letter-spacing="0" word-spacing="0" stroke-width="1.1115">
+
     <tspan x="47.3486" y="179.0359" style="-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start">Home</tspan>
   </text>
   <path d="M12.2783 196.878a94.8815 31.1377 0 0092.1014 23.7996 94.8815 31.1377 0 0092.0853-23.7877H14.9856c-.9614 0-1.844-.006-2.7073-.0119z" transform="matrix(.95515 0 0 1.0834 -.8087 21.5734)" opacity=".9" fill="#ff0" fill-opacity=".7111" stroke="#ff0" stroke-width=".7983" stroke-linejoin="round" filter="url(#a)"/>
   <path d="M94.28 122.1367C94.169.2855 94.1136.1283 94.1136.1283" fill="none" stroke="#000" stroke-width="1.4799"/>
 </svg>
          </a>
-        
-        <a href="#music"> 
+   
+<!--Music SVG-->
+        <a href="#music-top"> 
             
-       <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" >
+       <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
   <defs>
     <filter id="a" x="-.0581" width="1.1163" y="-.4499" height="1.8998" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="4.4615"/>
@@ -56,10 +72,10 @@
 </svg>
          </a>
          
-         
-         <a href="#eating"> 
+<!--Eating SVG-->
+         <a href="#eating-top"> 
         
-        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 60 200 300" >
+        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 60 200 300">
   <defs>
     <filter id="a" x="-.0581" width="1.1163" y="-.4499" height="1.8998" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="4.4615"/>
@@ -77,10 +93,10 @@
 </svg>
          </a>
          
-         
-         <a href="#events"> 
+<!--Events SVG   -->
+         <a href="#events-top"> 
         
-        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 30 200 300" >
+        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 30 200 300">
   <defs>
     <filter id="a" x="-.0581" width="1.1163" y="-.4499" height="1.8998" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="4.4615"/>
@@ -98,10 +114,11 @@
 </svg>
          </a>
          
+<!--Shopping SVG -->
          
-         <a href="#shopping"> 
+         <a href="#shopping-top"> 
         
-        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 70 200 300" >
+        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 70 200 300">
   <defs>
     <filter id="a" x="-.0581" width="1.1163" y="-.4499" height="1.8998" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="4.4615"/>
@@ -120,10 +137,11 @@
              
          </a>
          
+<!--About SVG-->
          
-         <a href="#about"> 
+         <a href="#about-top"> 
         
-        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300" >
+        <svg class="menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
   <defs>
     <filter id="a" x="-.0581" width="1.1163" y="-.4499" height="1.8998" color-interpolation-filters="sRGB">
       <feGaussianBlur stdDeviation="4.4615"/>
@@ -137,68 +155,227 @@
     <tspan x="47.3486" y="179.0359" style="-inkscape-font-specification:'Amatic SC, Bold';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start">About</tspan>
   </text>
   <path d="M12.2783 196.878a94.8815 31.1377 0 0092.1014 23.7996 94.8815 31.1377 0 0092.0853-23.7877H14.9856c-.9614 0-1.844-.006-2.7073-.0119z" transform="matrix(.95515 0 0 1.0834 -.8087 21.5734)" opacity=".9" fill="#ff0" fill-opacity=".7111" stroke="#ff0" stroke-width=".7983" stroke-linejoin="round" filter="url(#a)"/>
-  <path d="M94.28 122.1367C94.169.2855 94.1136.1283 94.1136.1283" fill="none" stroke="#000" stroke-width="1.4799"/>
+  <path d="M94.28 122.1367C94.169.2855 94.1136.1283 94.1136.1283" fill="none" stroke="#000" stroke-width="1.4799"/>     
 </svg>
-             
-         </a>
-        
-        </div>  
+</a>
+</div>  
+</nav>
 
-        </nav>
-        
-    </head>
+<!--             END SVG        -->
     
-    <body>
-        
+<!--    Home Page Content Panes    -->
+<body>
     <section id="home">   
     <div class="home-grid">
         
-    <div class="grid-item" id="music-grid">   
+<!--Music Content pane on homescreen. Images purely handled by CSS. Simple Javascript onclick                argument to navigate to relevant section. -->
+    <div class="grid-item" id="music-grid" onclick="document.getElementById('music').scrollIntoView()"> 
     <h1>Music</h1>
-        </div>    
-    
-    <div class="grid-item" id="eating-grid">
+        </div>  
+       
+    <div class="grid-item" id="eating-grid" onclick="document.getElementById('eating').scrollIntoView()">
     <h1>Eating</h1>
         </div>
         
-   <div class="grid-item" id="events-grid">
+   <div class="grid-item" id="events-grid" onclick="document.getElementById('events').scrollIntoView()">
     <h1>Events</h1>
         </div>
         
-        
-  <div class="grid-item" id="shopping-grid">
+  <div class="grid-item" id="shopping-grid" onclick="document.getElementById('shopping').scrollIntoView()">
       <h1>Shopping</h1>
        </div>
-    
-
-        
     </div>
-
     </section> 
         
+<!--        Music Section         -->
+    
+<!-- All sections follow the same basic layout, made up of a heading, short intro text, Subheadings with      columns for addition info and an image at the footer.
+     Layout is CSS Grid.-->
         
-    <section id="music" class="section">
+    <a id="music-top"></a>
+    <section>
+        <!-- Grid wrapper/container       -->
+        <div class="grid-container">
+            
+        <div class="grid-element1">
         <h1>Live Bands</h1>
-    </section> 
+        <p>The festival features two stages set in idylic Geelong countryside featuring the best talent the country has too offer across two days.</p>
+        </div>
+            
+            <div class="grid-element2">
+            <h2>Main Stage</h2>
+            <p>Ash Grunwald<br>Boo Seeka<br>Smith Street Band<br>Cloud Control
+            <br>Amy Shark<br>Sneaky Sound System<br>Golden Features
+            </p>
+            </div>
+            
+      
+        <div class="grid-element3">
+            <h2>Second Stage</h2>
+            <p>Vince Jones<br>Frank Gambale<br>Xavier Rudd<br>Tuff Mustard
+            <br>Blank Realm<br>Mike Who<br>Sydnee Carter
+            </p> 
+            </div>
         
-    <section id="eating" class="section">
+            <div class="grid-element4">
+        <img src="images/stage.png" class="responsive" alt="event map">
+            </div>
+            
+            <div class="grid-element5" id="music">
+
+            </div>
+        
+        </div>
+    </section>
+            
+        
+        
+<!--        Eating Section        -->
+        
+    <a id="eating-top"></a>
+    <section>
+        
+        <div class="grid-container">
+            
+        <div class="grid-element1">
         <h1>Food Stalls</h1>
-    </section> 
+        <p>Come taste the best food in Victoria! our food markets have the best local foods as well as attracting legendary food trucks and stalls from across the country.</p>
+        <p>Care has been taken to select a wide range of food vendors to cater for all dietary requirments.</p>     
+       
+        </div>
+            
+            <div class="grid-element2">
+            <h2>Food Trucks</h2>
+            <p>Chickos Chickens<br>The Ultimate Roast<br>Vegie Burger King<br>Wok and Roll
+            <br>Kale Extreme<br>
+            </p>
+            </div>
+      
+        <div class="grid-element3">
+            <h2>Food Stalls</h2>
+            <p>Elas Patisserie<br>Geelong Bakery<br>Rotary Club<br>Bunnings Snag Hut
+            <br>Geelong Dairy Co<br>
+            </p> 
+            </div>
         
-    <section id="events" class="section">
+            <div class="grid-element4">
+        <img src="images/markets.png" class="responsive" alt="Event Map">
+            </div>
+            <div class="grid-element5" id="food">
+            </div>
+        </div>
+    </section>        
+        
+<!--        Events Section        -->
+        
+            
+    <a id="events-top"></a>
+    <section>
+        
+        <div class="grid-container">
+            
+        <div class="grid-element1">
         <h1>Events for everyone</h1>
-    </section> 
+    
+        <p>We have events for the entire family, from rides and slides to firetwirling and fireworks.</p>
+       
+        </div>
         
-    <section id="shopping" class="section">
+            <div class="grid-element2">
+            <h2>Adults</h2>
+            <p>Fireworks<br>Air Gun Challenge<br>Firetwirling Classes<br>Hot Yoga
+            <br>Boxing Ring<br>Wine Tasting<br>Art Classes
+            </p>
+            </div>
+            
+        <div class="grid-element3">
+            <h2>Kids</h2>
+            <p>Fireworks<br>Jumping Castle<br>Duck Hunt<br>Apple Bobbing
+            <br>Face Painting<br>Rollercoaster<br>Dodgem Cars
+            </p> 
+            </div>
+        
+            <div class="grid-element4">
+        <img src="images/familyfun.png" class="responsive" alt="Event map">
+            </div>
+            <div class="grid-element5" id="events">
+            </div>
+        </div>
+    </section>       
+        
+ <!--        Shopping Section        --> 
+        
+        <a id="shopping-top"></a>
+        <section>
+        
+        <div class="grid-container">
+            
+        <div class="grid-element1">
         <h1>Shopping</h1>
+    
+        <p>Come visit the market stalls and see what the local community has to offer. From arts and crafts to jams and some of the areas finest wines.</p>
+       
+        </div>
+            
+            <div class="grid-element2">
+            <h2>Arts and Crafts</h2>
+            <p>Knitted Jumpers<br>Handmade Shoes<br>Silk Garments<br>Tea Sets
+            <br>Picnic Rugs<br>
+            </p>
+            </div>
+            
+        <div class="grid-element3">
+            <h2>Everything Else</h2>
+            <p>Local Wines<br>Jams and Spreads<br>Mens Shed Crafts<br>CWA Stall
+            <br>RFS Stall<br>Cheese Emporium
+            </p> 
+            </div>
         
+            <div class="grid-element4">
+        <img src="images/markets.png" class="responsive" alt="Event map">
+            </div>
+        
+            <div class="grid-element5" id="shopping">
+            </div>
+        </div>
     </section> 
         
-    <section id="about">
+<!--        About Section        --> 
+    <a id="about-top"></a>
+    <section>
+        <div class="grid-container">
+            
+        <div class="grid-element1">
         <h1>About</h1>
-        
+        <p>Southern coast festival of lights is organised by the local community of Geelong and the local council.<br><br>For festival enquires or expressions of interest please contact us below</p> 
+        </div>
+
+<!-- Basic contact form structure. Not fully implemented           -->
+    <div class="container">  
+    <form id="contact" action="" method="post">
+    <h3>Quick Contact</h3>
+    <fieldset>
+      <input placeholder="Your name" type="text"  required>
+    </fieldset>
+    <fieldset>
+      <input placeholder="Your Email Address" type="email" required>
+    </fieldset>
+    <fieldset>
+      <textarea placeholder="Type your Message Here...." required></textarea>
+    </fieldset>
+    <fieldset>
+      <button name="submit" type="submit" >Submit</button>
+    </fieldset>
+  </form>
+        </div>
+        </div>
     </section> 
     
+        <footer>
+<!--  Copyright notice   -->
+            <p>This website has been created as part of an assignment in an approved course of study for Curtin University and contains copyright material not created by the author. All copyright material used remains copyright of the respective owners and has been used here in pursuant to Section 40 of the Copyright Act 1968 (Commonwealth of Australia). No part of this work may be reproduced without consent of the original copyright owners. See code comments for references.</p>
+            
+        </footer>
         
     </body>
     
